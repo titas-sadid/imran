@@ -3,155 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111111">
-  <title>Procomil Longtime Power Spray</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Procomil Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-  <div class="top-strip">🔥 বিশেষ অফার — সারা বাংলাদেশে হোম ডেলিভারি ফ্রি 🔥</div>
+  <div id="loginView" class="login">
+    <form id="loginForm" class="login-card">
+      <h1>Admin Login</h1>
+      <p>Procomil Order Management</p>
+      <input id="username" placeholder="Username" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button>Login</button>
+      <small id="loginError"></small>
+    </form>
+  </div>
 
-  <header class="hero">
-    <div class="hero-inner reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">৪৫ মিলিয়ন সুপার পাওয়ার</p>
-        <h1>প্রকোমিল স্ট্রং স্প্রে</h1>
-        <p class="hero-sub">স্প্রে করলেই অধিক শক্ত অনুভূতি — ন্যাচারালভাবে দীর্ঘ সময়ের জন্য</p>
-        <a class="cta pulse" href="#order">অর্ডার করতে চাই</a>
-      </div>
-      <div class="hero-product">
-        <img src="https://naturalvimax.shop/wp-content/uploads/2026/07/ebc7240b-60bc-4807-a667-80e2a6c1b73f.png" alt="Procomil Spray">
-      </div>
-    </div>
-  </header>
+  <div id="appView" class="app hidden">
+    <aside class="sidebar">
+      <h2>Procomil</h2>
+      <button data-page="dashboard">📊 Dashboard</button>
+      <button data-page="orders">📦 Orders</button>
+      <button data-page="customers">👤 Customers</button>
+      <button data-page="users">👥 Users</button>
+      <button id="logout">🚪 Logout</button>
+    </aside>
 
-  <section class="offer reveal">
-    <div class="offer-card">
-      <div>
-        <span class="regular">রেগুলার মূল্য <s>১৪৫০ টাকা</s></span>
-        <strong>অফার মূল্য ১২৫০ টাকা</strong>
-      </div>
-      <a class="cta" href="#order">অর্ডার করতে চাই</a>
-    </div>
-  </section>
+    <main class="main">
+      <header><h1 id="pageTitle">Dashboard</h1></header>
 
-  <section class="benefits section">
-    <div class="container">
-      <h2 class="section-title reveal">প্রকোমিল স্প্রে এর উপকারিতা</h2>
-      <div class="benefit-grid">
-        <article class="benefit reveal"><span>⏱️</span><h3>দীর্ঘ সময়</h3><p>দীর্ঘ সময়ের অভিজ্ঞতার জন্য ব্যবহারযোগ্য হিসেবে বাজারজাত করা হয়েছে।</p></article>
-        <article class="benefit reveal"><span>🎯</span><h3>সংবেদনশীলতা</h3><p>প্সম্পূর্ণ ন্যাচারাল কোন সাইড ইফেক্ট নেই নিঃসন্দেহে ভালো রেজাল্ট পাবেন</p></article>
-        <article class="benefit reveal"><span>❤️</span><h3>দাম্পত্য জীবনে সহায়ক</h3><p>ব্যবহারকারীর অভিজ্ঞতাকে আরও আরামদায়ক করার উদ্দেশ্যে তৈরি।</p></article>
-        <article class="benefit reveal"><span>🛡️</span><h3>বিশ্বাস</h3><p>যেহেতু আমরা বিশ্বাস করি কাস্টমার দিয়ে কাস্টমার পাবো  আপনি ভালো ফলাফল পেলে আপনার মাধ্যমে আমরা আরো কিছু কাস্টমার পাবো যেহেতু এটা নতুন প্রোডাক্ট আপডেট প্রোডাক্ট।</p></article>
-      </div>
-      <div class="center"><a class="cta" href="#order">অর্ডার করতে চাই</a></div>
-    </div>
-  </section>
-
-  <section class="gallery section">
-    <div class="container">
-      <h2 class="section-title reveal">আমাদের পণ্যের সকল ইমেইজ</h2>
-      <div class="gallery-grid">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/ebc7240b-60bc-4807-a667-80e2a6c1b73f.png" alt="">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/imageye___-_imgi_10_WhatsApp-Image-2026-07-16-at-2.09.12-PM-e1784214144281.jpg" alt="">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/1a3958af-0e1e-43c5-9054-f1c457fb1fec.png" alt="">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/2a29aed9-4fe3-4d4f-8f64-8548759a2930.png" alt="">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/imageye___-_imgi_5_WhatsApp-Image-2026-07-16-at-2.09.13-PM.jpg" alt="">
-        <img class="reveal" src="https://naturalvimax.shop/wp-content/uploads/2026/07/imageye___-_imgi_3_WhatsApp-Image-2026-07-16-at-2.10.21-PM-1.jpg" alt="">
-        <img class="reveal wide" src="https://naturalvimax.shop/wp-content/uploads/2026/07/51203bb7-7a08-43a2-9630-f8903b6f94f7.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="trust section">
-    <div class="container trust-box reveal">
-      <div class="trust-image"><img src="https://naturalvimax.shop/wp-content/uploads/2026/07/51203bb7-7a08-43a2-9630-f8903b6f94f7.png" alt=""></div>
-      <div>
-        <h2>একমাত্র আমরাই বাংলাদেশে প্রকোমিল সেল করি</h2>
-        <p>যেহেতু আমরা ইম্পোর্টার ও সেলার, তাই পণ্যের অরিজিনালিটি সম্পর্কে নিশ্চিত হওয়ার জন্য লেবেল, প্যাকেজিং এবং ব্যবহারবিধি যাচাই করে নিন।</p>
-        <a class="cta" href="#order">অর্ডার করতে চাই</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq section">
-    <div class="container">
-      <h2 class="section-title reveal">আপনাদের করা কিছু সাধারণ প্রশ্ন ও উত্তর</h2>
-      <div class="faq-list">
-        <details class="reveal"><summary>এই স্প্রেতে কী কী উপাদান রয়েছে?</summary><p>প্রস্তুতকারকের তথ্য অনুযায়ী এতে Vitamin E, Maca Extract এবং Royal Honey-এর কথা উল্লেখ করা হয়েছে।</p></details>
-        <details class="reveal"><summary>কীভাবে ব্যবহার করব?</summary><p>প্সহবাসের ১৫/২০  মিনিট আগে লিঙ্গের মাথা থেকে অর্ধেক পর্যন্ত একবার স্প্রে করুন।</p></details>
-        <details class="reveal"><summary>এটি অন্যান্য স্প্রে থেকে কীভাবে আলাদা?</summary><p>প্ভিগা স্প্রে নটিবয়  স্প্রে স্টেড স্প্রে থেকেও অধিক পাওয়ারফুল প্রকমিল স্প্রে তাই এটা ভিন্ন।</p></details>
-        <details class="reveal"><summary>এটি ব্যবহার করলে কী ফলাফল পাওয়া যেতে পারে?</summary><p>কাস্টমার রিভিউ অনুসারে কোন ধরনের সাইড ইফেক্ট ছাড়াই ৪০ থেকে ৫০ মিনিট সময় পাবেন।</p></details>
-        <details class="reveal"><summary>আপনাদের ঠিকানা কোথায়?</summary><p>অফিস: ১৩৪/এ আব্দুল হামিদ রোড, নিউ জামতলা, নারায়ণগঞ্জ।</p></details>
-      </div>
-      <div class="center"><a class="cta" href="#order">অর্ডার করতে চাই</a></div>
-    </div>
-  </section>
-
-  <section class="final-cta">
-    <div class="container reveal">
-      <h2>আজই অর্ডার করুন</h2>
-      <p>আপনার তথ্য দিয়ে অর্ডার কনফার্ম করুন অথবা সরাসরি WhatsApp-এ যোগাযোগ করুন।</p>
-      <a class="cta" href="#order">অর্ডার করতে চাই</a>
-    </div>
-  </section>
-
-  <section id="order" class="order section">
-    <div class="container">
-      <h2 class="section-title reveal">অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h2>
-      <div class="free-delivery reveal">🚚 ফ্রি ডেলিভারি — সারা বাংলাদেশে হোম ডেলিভারি চার্জ ফ্রি</div>
-
-      <div class="order-box reveal">
-        <div class="product-row">
-          <img src="https://naturalvimax.shop/wp-content/uploads/2026/07/ebc7240b-60bc-4807-a667-80e2a6c1b73f.png" alt="">
-          <div>
-            <h3>Procomil Longtime Power Spray</h3>
-            <div class="qty">
-              <button type="button" id="minus">−</button>
-              <input id="qty" value="1" readonly>
-              <button type="button" id="plus">+</button>
-            </div>
-          </div>
-          <strong id="itemTotal">১,২৫০.০০৳</strong>
+      <section id="dashboard" class="page">
+        <div class="cards">
+          <div><span>Total Orders</span><b id="totalOrders">0</b></div>
+          <div><span>Pending</span><b id="pendingOrders">0</b></div>
+          <div><span>Confirmed</span><b id="confirmedOrders">0</b></div>
+          <div><span>Total Sales</span><b id="totalSales">0৳</b></div>
         </div>
+      </section>
 
-        <form id="orderForm">
-          <h3>Billing details</h3>
-          <label>আপনার নাম *
-            <input required id="name" placeholder="আপনার নাম লিখুন।">
-          </label>
-          <label>আপনার সম্পূর্ণ ঠিকানা *
-            <textarea required id="address" placeholder="আপনার সম্পূর্ণ ঠিকানা"></textarea>
-          </label>
-          <label>আপনার ফোন নাম্বার *
-            <input required id="phone" inputmode="tel" placeholder="আপনার ফোন নাম্বার লিখুন">
-          </label>
+      <section id="orders" class="page hidden">
+        <div class="toolbar">
+          <input id="orderSearch" placeholder="Search name / phone / order ID">
+          <select id="statusFilter">
+            <option value="">All Status</option>
+            <option>PENDING</option><option>CONFIRMED</option>
+            <option>SHIPPED</option><option>DELIVERED</option><option>CANCELLED</option>
+          </select>
+          <button id="refreshOrders">Refresh</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Order</th><th>Customer</th><th>Product</th><th>Total</th><th>Status</th><th>Date</th><th>Action</th></tr></thead>
+            <tbody id="ordersBody"></tbody>
+          </table>
+        </div>
+      </section>
 
-          <div class="shipping">🚚 সারা বাংলাদেশে হোম ডেলিভারি চার্জ <b>ফ্রি</b></div>
+      <section id="customers" class="page hidden">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Phone</th><th>Address</th><th>Orders</th></tr></thead>
+            <tbody id="customersBody"></tbody>
+          </table>
+        </div>
+      </section>
 
-          <div class="summary">
-            <div><span>Product</span><span>Subtotal</span></div>
-            <div><span>Procomil Longtime Power Spray × <b id="sumQty">1</b></span><span id="sum">১,২৫০.০০৳</span></div>
-            <div><span>Subtotal</span><span id="subtotal">১,২৫০.০০৳</span></div>
-            <div><span>Shipment</span><span>ফ্রি</span></div>
-            <div class="total"><span>Total</span><span id="grand">১,২৫০.০০৳</span></div>
-          </div>
-
-          <label class="cod"><input type="radio" checked> ক্যাশ অন ডেলিভারি</label>
-          <p class="muted">Pay with cash upon delivery.</p>
-          <button class="submit" type="submit">অর্ডার কনফার্ম করুন <span id="buttonTotal">১,২৫০.০০৳</span></button>
+      <section id="users" class="page hidden">
+        <form id="userForm" class="form-card">
+          <h2>Create User</h2>
+          <input id="newName" placeholder="Name" required>
+          <input id="newUsername" placeholder="Username" required>
+          <input id="newPassword" type="password" placeholder="Password" required>
+          <select id="newRole"><option value="STAFF">Staff</option><option value="ADMIN">Admin</option></select>
+          <button>Create User</button>
+          <p id="userMessage"></p>
         </form>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Procomil. All rights reserved.</p>
-  </footer>
-
-  <a class="whatsapp" href="https://wa.me/8801931613491" target="_blank" rel="noopener" aria-label="WhatsApp">⌕<span>WhatsApp</span></a>
-  <script src="script.js"></script>
+        <div class="table-wrap">
+          <table><thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th></tr></thead><tbody id="usersBody"></tbody></table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="admin.js"></script>
 </body>
 </html>
